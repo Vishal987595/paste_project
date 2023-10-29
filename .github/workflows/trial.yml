@@ -17,7 +17,7 @@ name: Java CI with Maven
 on: [workflow_dispatch]
 
 jobs:
-  printInputs:
+  Paste_regression:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
@@ -27,6 +27,22 @@ jobs:
       # run: bash get_projects.sh
     - name: Run the start.sh
       run: bash start.sh
+      
+    - name: Copy Results Directory
+      run: |
+          # Create a copy of the "results" directory
+          cp -r results results_copy
+
+    - name: Commit and Push Results Directory
+      run: |
+          git config --local user.email "vishal.ghoniya@iitgn.ac.in"
+          git config --local user.name "Vishal 987595"
+
+          # Add and commit the "results_copy" directory
+          git add results_copy
+          git commit -m "Add 'results' directory"
+          git push
+      
 # jobs:
 #   build:
 
