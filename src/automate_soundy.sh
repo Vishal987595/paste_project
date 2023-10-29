@@ -6,7 +6,7 @@ rm -rf xPASTE_PROJ
 mkdir xPASTE_PROJ
 cp pom.xml xPASTE_PROJ
 
-runs=5
+runs=1
 timebound=3h
 
 for j in `seq 1 ${runs}`;
