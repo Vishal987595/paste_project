@@ -2,7 +2,7 @@ name: Add Results to Repository
 
 on:
   workflow_run:
-    workflows: [Java CI with Maven]
+    workflows: [Java CI with]
     types:
       - completed
 
