@@ -1,0 +1,8 @@
+
+[RUN MODE (2 stages)] (par-->seq)
+
+Failed tests (in par.): 0
+Par time: 36.274 secs.
+Seq-flk time: 0 secs.
+End-to-end time: 36.274 secs.
+
