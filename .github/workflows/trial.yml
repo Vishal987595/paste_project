@@ -23,9 +23,10 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Run get_projects.sh
+    # - name: Run get_projects.sh
       # run: bash get_projects.sh
-      run : echo "Vishal"
+    - name: Run the start.sh
+      run: bash start.sh
 # jobs:
 #   build:
 
