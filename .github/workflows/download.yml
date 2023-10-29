@@ -22,8 +22,8 @@ jobs:
 
       - name: Commit and Push Results Directory
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.email "vishal.ghoniya@iitgn.ac.in"
+          git config --local user.name "Vishal 987595"
 
           # Add and commit the "results_copy" directory
           git add results_copy
