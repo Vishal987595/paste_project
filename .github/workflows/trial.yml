@@ -28,7 +28,7 @@ jobs:
       with:
         java-version: '8'
         distribution: 'zulu'
-        java-package: 'jre'
+        java-package: 'jdk'
 
     - name: Setup Maven Action
       uses: stCarolas/setup-maven@v4.5
