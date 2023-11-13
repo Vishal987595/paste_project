@@ -23,34 +23,43 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Set up JDK 17
+    - name: Set up JDK and Maven
       uses: actions/setup-java@v3
       with:
-        java-version: '17'
+        java-version: '1.8.0_332'
         distribution: 'temurin'
-        cache: maven
+        maven-version: '3.6.3'
+
+    - name: Display Maven and Java Info
+      run: |
+        echo "Apache Maven $(mvn -v | grep 'Apache Maven' | awk '{print $3}')"
+        echo "Maven home: $M2_HOME"
+        echo "Java version: $(java -version 2>&1 | grep version | awk '{print $3}' | tr -d '\"')"
+        echo "Java home: $JAVA_HOME"
+        echo "Default locale: $(locale | grep "LANG" | awk -F "=" '{print $2}')"
+        echo "Platform encoding: $(locale charmap)"
 
     # - name: Run get_projects.sh
       # run: bash get_projects.sh
-    - name: Run the start.sh
-      run: bash start.sh
+    # - name: Run the start.sh
+    #   run: bash start.sh
       
-    - name: Copy Results Directory
-      run: |
-          # Create a copy of the "results" directory
-          cp -r results results_copy
-          mvn -v
-          java -version
+    # - name: Copy Results Directory
+    #   run: |
+    #       # Create a copy of the "results" directory
+    #       cp -r results results_copy
+    #       mvn -v
+    #       java -version
 
-    - name: Commit and Push Results Directory
-      run: |
-          git config --local user.email "vishal.ghoniya@iitgn.ac.in"
-          git config --local user.name "Vishal 987595"
+    # - name: Commit and Push Results Directory
+    #   run: |
+    #       git config --local user.email "vishal.ghoniya@iitgn.ac.in"
+    #       git config --local user.name "Vishal 987595"
 
-          # Add and commit the "results_copy" directory
-          git add results_copy
-          git commit -m "Add 'results' directory"
-          git push
+    #       # Add and commit the "results_copy" directory
+    #       git add results_copy
+    #       git commit -m "Add 'results' directory"
+    #       git push
 
       
 # jobs:
