@@ -34,7 +34,7 @@ MAVEN_SKIPS="-Drat.skip=true -Dmaven.javadoc.skip=true \
 
 #mvn -B -o -fn -DforkCount=1C -DreuseForks=true -Dparallel=classes -DthreadCount=7 $MAVEN_SKIPS test &>> xPASTE_PROJ/tot.time #stage 1 (classes only)
 #mvn -B -o -fn -DforkCount=1C -DreuseForks=true -Dparallel=methods -DthreadCount=7 $MAVEN_SKIPS test &>> xPASTE_PROJ/tot.time #stage 1 (methods only)
-mvn -B -o -fn -DforkCount=1C -DreuseForks=true -Dparallel=classesAndMethods -DthreadCount=7 $MAVEN_SKIPS test &>> xPASTE_PROJ/tot.time #stage 1 (classes+methods)
+mvn -B -o -fn -DforkCount=1C -DreuseForks=true -Dparallel=classesAndMethods -DthreadCount=2 $MAVEN_SKIPS test &>> xPASTE_PROJ/tot.time #stage 1 (classes+methods)
 
 hold=$(cat testSuiteSize.info) # read pre-recorded count as maven test-count in parallel is buggy!
 

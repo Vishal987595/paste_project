@@ -1,0 +1,36 @@
+out.0.txt:[[1;31mERROR[m] [1;31mTests [0;1mrun: [0;1m1[m, Failures: 0, [1;31mErrors: [0;1;31m1[m, Skipped: 0, Time elapsed: 0.508 s[1;31m <<< FAILURE![m - in org.apache.accumulo.master.replication.[1mMasterReplicationCoordinatorTest[m
+out.0.txt:[[1;31mERROR[m] org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer  Time elapsed: 0.431 s  <<< ERROR!
+out.0.txt:[[1;31mERROR[m] [1;31mErrors: [m
+out.0.txt:[[1;31mERROR[m] [1;31m  MasterReplicationCoordinatorTest.randomServer:48 » NullPointer[m
+out.0.txt:[[1;31mERROR[m] [1;31mTests run: 1, Failures: 0, Errors: 1, Skipped: 0[m
+out.0.txt:[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+out.0.txt:[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-surefire-plugin:3.0.0-M5:test[m [1m(default-test)[m on project [36maccumulo-master[m: [1;31mThere are test failures.[m
+out.0.txt:[[1;31mERROR[m] [1;31m[m
+out.0.txt:[[1;31mERROR[m] [1;31mPlease refer to /home/shouvick/postdoc/test-par/subjects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/server/master/target/surefire-reports for the individual test results.[m
+out.0.txt:[[1;31mERROR[m] [1;31mPlease refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.[m
+out.0.txt:[[1;31mERROR[m] -> [1m[Help 1][m
+out.0.txt:[[1;31mERROR[m] 
+out.0.txt:[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+out.0.txt:[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+out.0.txt:[[1;31mERROR[m] 
+out.0.txt:[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+out.0.txt:[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+out.2.txt:[[1;31mERROR[m] [1;31mTests [0;1mrun: [0;1m2[m, Failures: 0, [1;31mErrors: [0;1;31m2[m, Skipped: 0, Time elapsed: 0.507 s[1;31m <<< FAILURE![m - in org.apache.accumulo.master.replication.[1mMasterReplicationCoordinatorTest[m
+out.2.txt:[[1;31mERROR[m] org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset  Time elapsed: 0.426 s  <<< ERROR!
+out.2.txt:[[1;31mERROR[m] org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer  Time elapsed: 0.001 s  <<< ERROR!
+out.2.txt:[[1;31mERROR[m] [1;31mErrors: [m
+out.2.txt:[[1;31mERROR[m] [1;31m  MasterReplicationCoordinatorTest.invalidOffset »  Unexpected exception, expect...[m
+out.2.txt:[[1;31mERROR[m] [1;31m  MasterReplicationCoordinatorTest.randomServer:48 » NullPointer[m
+out.2.txt:[[1;31mERROR[m] [1;31mTests run: 2, Failures: 0, Errors: 2, Skipped: 0[m
+out.2.txt:[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+out.2.txt:[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-surefire-plugin:3.0.0-M5:test[m [1m(default-test)[m on project [36maccumulo-master[m: [1;31mThere are test failures.[m
+out.2.txt:[[1;31mERROR[m] [1;31m[m
+out.2.txt:[[1;31mERROR[m] [1;31mPlease refer to /home/shouvick/postdoc/test-par/subjects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/server/master/target/surefire-reports for the individual test results.[m
+out.2.txt:[[1;31mERROR[m] [1;31mPlease refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.[m
+out.2.txt:[[1;31mERROR[m] -> [1m[Help 1][m
+out.2.txt:[[1;31mERROR[m] 
+out.2.txt:[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+out.2.txt:[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+out.2.txt:[[1;31mERROR[m] 
+out.2.txt:[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+out.2.txt:[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
