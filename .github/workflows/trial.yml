@@ -31,10 +31,10 @@ jobs:
         java-package: 'jre'
 
     - name: Setup Maven Action
-        uses: s4u/setup-maven-action@<version>
-        with:
-          java-version: '8'
-          maven-version: '3.6.3'
+      uses: s4u/setup-maven-action@v1
+      with:
+        java-version: '8'
+        maven-version: '3.6.3'
     
     - name: Display Maven and Java Info
       run: |
