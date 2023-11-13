@@ -30,14 +30,8 @@ jobs:
         distribution: 'zulu'
         java-package: 'jre'
 
-    - name: Download and Set up Maven
-      run: |
-        MAVEN_VERSION="3.6.3"
-        wget -q "https://archive.apache.org/dist/maven/maven-3/${MAVEN_VERSION}/binaries/apache-maven-${MAVEN_VERSION}-bin.tar.gz" -O maven.tar.gz
-        tar xzf maven.tar.gz
-        export MAVEN_HOME=$PWD/apache-maven-${MAVEN_VERSION}
-        export PATH=$MAVEN_HOME/bin:$PATH
-        echo "Maven installed to $MAVEN_HOME"
+    - name: Setup Maven Action
+        uses: s4u/setup-maven-action@3.6.3
     
     - name: Display Maven and Java Info
       run: |
