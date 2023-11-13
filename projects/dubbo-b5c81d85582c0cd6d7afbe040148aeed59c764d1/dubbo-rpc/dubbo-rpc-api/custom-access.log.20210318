@@ -1,6 +1,0 @@
-[2021-03-18 22:20:38] null:0 -> 192.168.1.104:0 - org.apache.dubbo.rpc.support.DemoService echo(java.lang.String) ["aa"]
-[2021-03-18 22:34:01] null:0 -> 192.168.1.104:0 - org.apache.dubbo.rpc.support.DemoService echo(java.lang.String) ["aa"]
-[2021-03-18 22:52:26] null:0 -> 192.168.1.104:0 - org.apache.dubbo.rpc.support.DemoService echo(java.lang.String) ["aa"]
-[2021-03-18 23:04:53] null:0 -> 192.168.1.104:0 - org.apache.dubbo.rpc.support.DemoService echo(java.lang.String) ["aa"]
-[2021-03-18 23:16:20] null:0 -> 192.168.1.104:0 - org.apache.dubbo.rpc.support.DemoService echo(java.lang.String) ["aa"]
-[2021-03-18 23:28:51] null:0 -> 192.168.1.104:0 - org.apache.dubbo.rpc.support.DemoService echo(java.lang.String) ["aa"]
