@@ -28,16 +28,22 @@ jobs:
       with:
         java-version: '1.8.0_332'
         distribution: 'temurin'
-        maven-version: '3.6.3'
-
+    
+    - name: Download and Set up Maven
+      run: |
+        MAVEN_VERSION="3.6.3"
+        wget -q "https://archive.apache.org/dist/maven/maven-3/${MAVEN_VERSION}/binaries/apache-maven-${MAVEN_VERSION}-bin.tar.gz" -O maven.tar.gz
+        tar xzf maven.tar.gz
+        export MAVEN_HOME=$PWD/apache-maven-${MAVEN_VERSION}
+        export PATH=$MAVEN_HOME/bin:$PATH
+        echo "Maven installed to $MAVEN_HOME"
+    
     - name: Display Maven and Java Info
       run: |
-        echo "Apache Maven $(mvn -v | grep 'Apache Maven' | awk '{print $3}')"
-        echo "Maven home: $M2_HOME"
-        echo "Java version: $(java -version 2>&1 | grep version | awk '{print $3}' | tr -d '\"')"
+        echo "Apache Maven $(mvn -v)"
+        echo "Maven home: $MAVEN_HOME"
+        echo "Java version: $(java -version)"
         echo "Java home: $JAVA_HOME"
-        echo "Default locale: $(locale | grep "LANG" | awk -F "=" '{print $2}')"
-        echo "Platform encoding: $(locale charmap)"
 
     # - name: Run get_projects.sh
       # run: bash get_projects.sh
