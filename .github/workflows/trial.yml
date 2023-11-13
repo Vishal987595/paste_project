@@ -23,12 +23,11 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Set up JDK and Maven
+    - name: Set up JDK
       uses: actions/setup-java@v3
       with:
-        java-version: '1.8.0_332'
-        distribution: 'temurin'
-    
+        java-version: 'adopt@1.8.0_332'
+
     - name: Download and Set up Maven
       run: |
         MAVEN_VERSION="3.6.3"
