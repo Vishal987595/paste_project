@@ -1,0 +1,1075 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Apache Accumulo Project                                            [pom]
+[INFO] Apache Accumulo Start                                              [jar]
+[INFO] Apache Accumulo Server Base                                        [jar]
+[INFO] Apache Accumulo GC Server                                          [jar]
+[INFO] Apache Accumulo Master Server                                      [jar]
+[INFO] Apache Accumulo Tracer Server                                      [jar]
+[INFO] Apache Accumulo Monitor Server                                     [jar]
+[INFO] Apache Accumulo Iterator Test Harness                              [jar]
+[INFO] Apache Accumulo Testing                                            [jar]
+[INFO] Apache Accumulo Hadoop MapReduce                                   [jar]
+[INFO] Apache Accumulo                                                    [pom]
+[INFO] 
+[INFO] ----------------< org.apache.accumulo:accumulo-project >----------------
+[INFO] Building Apache Accumulo Project 2.0.1                            [1/11]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:parse-version (parse-project-version) @ accumulo-project ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ accumulo-project ---
+[INFO] 
+[INFO] --- mavanagaiata:0.9.4:commit (git-commit) @ accumulo-project ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.13:check (check-licenses) @ accumulo-project ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.10.0:sort (sort-pom) @ accumulo-project ---
+[INFO] Sorting file /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/pom.xml
+[INFO] Pom file is already sorted, exiting
+[INFO] 
+[INFO] --- formatter-maven-plugin:2.10.0:format (format-java-source) @ accumulo-project ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 0
+[INFO] 
+[INFO] --- impsort-maven-plugin:1.2.0:sort (sort-imports) @ accumulo-project ---
+[INFO]  Total Files Processed: 0 in 00:00.003
+[INFO]         Already Sorted: 0
+[INFO]         Needed Sorting: 0
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ accumulo-project ---
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.10.0:verify (verify-sorted-pom) @ accumulo-project ---
+[INFO] Verifying file /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-java-signatures) @ accumulo-project ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.8.0:modernizer (modernizer) @ accumulo-project ---
+[INFO] 
+[INFO] --- warbucks-maven-plugin:1.1.2:check (check-junit-categories-on-its) @ accumulo-project ---
+[INFO] Rule 0: Class Matches: 0
+[INFO] Rule 0: Class Failures: 0
+[INFO] Total class failures: 0
+[INFO] 
+[INFO] -----------------< org.apache.accumulo:accumulo-start >-----------------
+[INFO] Building Apache Accumulo Start 2.0.1                              [2/11]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:parse-version (parse-project-version) @ accumulo-start ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ accumulo-start ---
+[INFO] 
+[INFO] --- mavanagaiata:0.9.4:commit (git-commit) @ accumulo-start ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.13:check (check-licenses) @ accumulo-start ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.10.0:sort (sort-pom) @ accumulo-start ---
+[INFO] Sorting file /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/start/pom.xml
+[INFO] Pom file is already sorted, exiting
+[INFO] 
+[INFO] --- formatter-maven-plugin:2.10.0:format (format-java-source) @ accumulo-start ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 24
+[INFO] Successfully formatted:          0 file(s)
+[INFO] Fail to format:                  0 file(s)
+[INFO] Skipped:                         24 file(s)
+[INFO] Read only skipped:               0 file(s)
+[INFO] Approximate time taken:          1s
+[INFO] 
+[INFO] --- impsort-maven-plugin:1.2.0:sort (sort-imports) @ accumulo-start ---
+[INFO]  Total Files Processed: 24 in 00:00.430
+[INFO]         Already Sorted: 24
+[INFO]         Needed Sorting:  0
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ accumulo-start ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ accumulo-start ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/start/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.10.0:verify (verify-sorted-pom) @ accumulo-start ---
+[INFO] Verifying file /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/start/pom.xml
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ accumulo-start ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 17 source files to /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/start/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ accumulo-start ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ accumulo-start ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/start/target/test-classes
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-java-signatures) @ accumulo-start ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.8.0:modernizer (modernizer) @ accumulo-start ---
+[INFO] 
+[INFO] --- warbucks-maven-plugin:1.1.2:check (check-junit-categories-on-its) @ accumulo-start ---
+[INFO] Rule 0: Class Matches: 0
+[INFO] Rule 0: Class Failures: 0
+[INFO] Total class failures: 0
+[INFO] 
+[INFO] --- exec-maven-plugin:1.5.0:exec (Build Test jars) @ accumulo-start ---
+[INFO] 
+[INFO] --- exec-maven-plugin:1.5.0:exec (Build HelloWorld jars) @ accumulo-start ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ accumulo-start ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.accumulo.start.classloader.vfs.ContextManagerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.287 s - in org.apache.accumulo.start.classloader.vfs.ContextManagerTest
+[INFO] Running org.apache.accumulo.start.classloader.vfs.AccumuloVFSClassLoaderTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.025 s - in org.apache.accumulo.start.classloader.vfs.AccumuloVFSClassLoaderTest
+[INFO] Running org.apache.accumulo.start.classloader.vfs.providers.VfsClassLoaderTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 24.774 s - in org.apache.accumulo.start.classloader.vfs.providers.VfsClassLoaderTest
+[INFO] Running org.apache.accumulo.start.classloader.vfs.AccumuloClasspathTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.151 s - in org.apache.accumulo.start.classloader.vfs.AccumuloClasspathTest
+[INFO] Running org.apache.accumulo.start.classloader.vfs.AccumuloReloadingVFSClassLoaderTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 28.246 s - in org.apache.accumulo.start.classloader.vfs.AccumuloReloadingVFSClassLoaderTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --------------< org.apache.accumulo:accumulo-server-base >--------------
+[INFO] Building Apache Accumulo Server Base 2.0.1                        [3/11]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:parse-version (parse-project-version) @ accumulo-server-base ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ accumulo-server-base ---
+[INFO] 
+[INFO] --- mavanagaiata:0.9.4:commit (git-commit) @ accumulo-server-base ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.13:check (check-licenses) @ accumulo-server-base ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.10.0:sort (sort-pom) @ accumulo-server-base ---
+[INFO] Sorting file /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/server/base/pom.xml
+[INFO] Pom file is already sorted, exiting
+[INFO] 
+[INFO] --- formatter-maven-plugin:2.10.0:format (format-java-source) @ accumulo-server-base ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 248
+[INFO] Successfully formatted:          0 file(s)
+[INFO] Fail to format:                  0 file(s)
+[INFO] Skipped:                         248 file(s)
+[INFO] Read only skipped:               0 file(s)
+[INFO] Approximate time taken:          1s
+[INFO] 
+[INFO] --- impsort-maven-plugin:1.2.0:sort (sort-imports) @ accumulo-server-base ---
+[INFO]  Total Files Processed: 250 in 00:00.931
+[INFO]         Already Sorted: 250
+[INFO]         Needed Sorting:   0
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ accumulo-server-base ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ accumulo-server-base ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/server/base/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.10.0:verify (verify-sorted-pom) @ accumulo-server-base ---
+[INFO] Verifying file /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/server/base/pom.xml
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ accumulo-server-base ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 183 source files to /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/server/base/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ accumulo-server-base ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ accumulo-server-base ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 67 source files to /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/server/base/target/test-classes
+[WARNING] /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/server/base/src/test/java/org/apache/accumulo/server/fs/PerTableVolumeChooserTest.java:[56,54] none() in org.junit.rules.ExpectedException has been deprecated
+[WARNING] /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/server/base/src/test/java/org/apache/accumulo/server/fs/VolumeManagerImplTest.java:[43,54] none() in org.junit.rules.ExpectedException has been deprecated
+[WARNING] /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/server/base/src/test/java/org/apache/accumulo/server/fs/PreferredVolumeChooserTest.java:[57,54] none() in org.junit.rules.ExpectedException has been deprecated
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-java-signatures) @ accumulo-server-base ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.8.0:modernizer (modernizer) @ accumulo-server-base ---
+[INFO] 
+[INFO] --- warbucks-maven-plugin:1.1.2:check (check-junit-categories-on-its) @ accumulo-server-base ---
+[INFO] Rule 0: Class Matches: 0
+[INFO] Rule 0: Class Failures: 0
+[INFO] Total class failures: 0
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ accumulo-server-base ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.accumulo.server.fs.PreferredVolumeChooserTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.211 s - in org.apache.accumulo.server.fs.PreferredVolumeChooserTest
+[INFO] Running org.apache.accumulo.server.fs.FileRefTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in org.apache.accumulo.server.fs.FileRefTest
+[INFO] Running org.apache.accumulo.server.fs.ViewFSUtilsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.388 s - in org.apache.accumulo.server.fs.ViewFSUtilsTest
+[INFO] Running org.apache.accumulo.server.fs.VolumeManagerImplTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.236 s - in org.apache.accumulo.server.fs.VolumeManagerImplTest
+[INFO] Running org.apache.accumulo.server.fs.PerTableVolumeChooserTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.apache.accumulo.server.fs.PerTableVolumeChooserTest
+[INFO] Running org.apache.accumulo.server.fs.VolumeUtilTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 s - in org.apache.accumulo.server.fs.VolumeUtilTest
+[INFO] Running org.apache.accumulo.server.fs.FileTypeTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.accumulo.server.fs.FileTypeTest
+[INFO] Running org.apache.accumulo.server.fs.SpaceAwareVolumeChooserTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.256 s - in org.apache.accumulo.server.fs.SpaceAwareVolumeChooserTest
+[INFO] Running org.apache.accumulo.server.ServerContextTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.08 s - in org.apache.accumulo.server.ServerContextTest
+[INFO] Running org.apache.accumulo.server.constraints.MetadataConstraintsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s - in org.apache.accumulo.server.constraints.MetadataConstraintsTest
+[INFO] Running org.apache.accumulo.server.ServerConstantsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.299 s - in org.apache.accumulo.server.ServerConstantsTest
+[INFO] Running org.apache.accumulo.server.iterators.MetadataBulkLoadFilterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.accumulo.server.iterators.MetadataBulkLoadFilterTest
+[INFO] Running org.apache.accumulo.server.tables.IllegalTableTransitionExceptionTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.accumulo.server.tables.IllegalTableTransitionExceptionTest
+[INFO] Running org.apache.accumulo.server.master.balancer.HostRegexTableLoadBalancerTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.064 s - in org.apache.accumulo.server.master.balancer.HostRegexTableLoadBalancerTest
+[INFO] Running org.apache.accumulo.server.master.balancer.DefaultLoadBalancerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.apache.accumulo.server.master.balancer.DefaultLoadBalancerTest
+[INFO] Running org.apache.accumulo.server.master.balancer.HostRegexTableLoadBalancerReconfigurationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.004 s - in org.apache.accumulo.server.master.balancer.HostRegexTableLoadBalancerReconfigurationTest
+[INFO] Running org.apache.accumulo.server.master.balancer.TableLoadBalancerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.apache.accumulo.server.master.balancer.TableLoadBalancerTest
+[INFO] Running org.apache.accumulo.server.master.balancer.ChaoticLoadBalancerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.accumulo.server.master.balancer.ChaoticLoadBalancerTest
+[INFO] Running org.apache.accumulo.server.master.balancer.GroupBalancerTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.708 s - in org.apache.accumulo.server.master.balancer.GroupBalancerTest
+[INFO] Running org.apache.accumulo.server.master.state.TabletLocationStateTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in org.apache.accumulo.server.master.state.TabletLocationStateTest
+[INFO] Running org.apache.accumulo.server.master.state.MergeInfoTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.apache.accumulo.server.master.state.MergeInfoTest
+[INFO] Running org.apache.accumulo.server.master.LiveTServerSetTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.apache.accumulo.server.master.LiveTServerSetTest
+[INFO] Running org.apache.accumulo.server.data.ServerMutationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in org.apache.accumulo.server.data.ServerMutationTest
+[INFO] Running org.apache.accumulo.server.rpc.SaslServerConnectionParamsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.accumulo.server.rpc.SaslServerConnectionParamsTest
+[INFO] Running org.apache.accumulo.server.rpc.ThriftServerTypeTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.accumulo.server.rpc.ThriftServerTypeTest
+[INFO] Running org.apache.accumulo.server.rpc.TCredentialsUpdatingInvocationHandlerTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.accumulo.server.rpc.TCredentialsUpdatingInvocationHandlerTest
+[INFO] Running org.apache.accumulo.server.rpc.SaslDigestCallbackHandlerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in org.apache.accumulo.server.rpc.SaslDigestCallbackHandlerTest
+[INFO] Running org.apache.accumulo.server.conf.ZooCachePropertyAccessorTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in org.apache.accumulo.server.conf.ZooCachePropertyAccessorTest
+[INFO] Running org.apache.accumulo.server.conf.ServerConfigurationFactoryTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.apache.accumulo.server.conf.ServerConfigurationFactoryTest
+[INFO] Running org.apache.accumulo.server.conf.ZooConfigurationFactoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.accumulo.server.conf.ZooConfigurationFactoryTest
+[INFO] Running org.apache.accumulo.server.conf.NamespaceConfigurationTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.accumulo.server.conf.NamespaceConfigurationTest
+[INFO] Running org.apache.accumulo.server.conf.TableConfigurationTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.apache.accumulo.server.conf.TableConfigurationTest
+[INFO] Running org.apache.accumulo.server.zookeeper.TransactionWatcherTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.apache.accumulo.server.zookeeper.TransactionWatcherTest
+[INFO] Running org.apache.accumulo.server.ServerUtilTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.accumulo.server.ServerUtilTest
+[INFO] Running org.apache.accumulo.server.AccumuloTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in org.apache.accumulo.server.AccumuloTest
+[INFO] Running org.apache.accumulo.server.problems.ProblemReportTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.accumulo.server.problems.ProblemReportTest
+[INFO] Running org.apache.accumulo.server.problems.ProblemReportingIteratorTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in org.apache.accumulo.server.problems.ProblemReportingIteratorTest
+[INFO] Running org.apache.accumulo.server.util.DefaultMapTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.accumulo.server.util.DefaultMapTest
+[INFO] Running org.apache.accumulo.server.util.FileSystemMonitorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.accumulo.server.util.FileSystemMonitorTest
+[INFO] Running org.apache.accumulo.server.util.AdminTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.accumulo.server.util.AdminTest
+[INFO] Running org.apache.accumulo.server.util.AdminCommandsTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.accumulo.server.util.AdminCommandsTest
+[INFO] Running org.apache.accumulo.server.util.TServerUtilsTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.003 s - in org.apache.accumulo.server.util.TServerUtilsTest
+[INFO] Running org.apache.accumulo.server.util.ReplicationTableUtilTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.apache.accumulo.server.util.ReplicationTableUtilTest
+[INFO] Running org.apache.accumulo.server.util.FileUtilTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 s - in org.apache.accumulo.server.util.FileUtilTest
+[INFO] Running org.apache.accumulo.server.util.FileInfoTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.accumulo.server.util.FileInfoTest
+[INFO] Running org.apache.accumulo.server.util.time.SimpleTimerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.303 s - in org.apache.accumulo.server.util.time.SimpleTimerTest
+[INFO] Running org.apache.accumulo.server.util.time.BaseRelativeTimeTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.accumulo.server.util.time.BaseRelativeTimeTest
+[INFO] Running org.apache.accumulo.server.replication.proto.StatusTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s - in org.apache.accumulo.server.replication.proto.StatusTest
+[INFO] Running org.apache.accumulo.server.replication.StatusCombinerTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.apache.accumulo.server.replication.StatusCombinerTest
+[INFO] Running org.apache.accumulo.server.replication.ZooKeeperInitializationTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.accumulo.server.replication.ZooKeeperInitializationTest
+[INFO] Running org.apache.accumulo.server.replication.StatusUtilTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.accumulo.server.replication.StatusUtilTest
+[INFO] Running org.apache.accumulo.server.replication.ReplicationUtilTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.accumulo.server.replication.ReplicationUtilTest
+[INFO] Running org.apache.accumulo.server.ServerOptsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.accumulo.server.ServerOptsTest
+[INFO] Running org.apache.accumulo.server.client.BulkImporterTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.003 s - in org.apache.accumulo.server.client.BulkImporterTest
+[INFO] Running org.apache.accumulo.server.init.InitializeTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.003 s - in org.apache.accumulo.server.init.InitializeTest
+[INFO] Running org.apache.accumulo.server.security.SystemCredentialsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.accumulo.server.security.SystemCredentialsTest
+[INFO] Running org.apache.accumulo.server.security.UserImpersonationTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.accumulo.server.security.UserImpersonationTest
+[INFO] Running org.apache.accumulo.server.security.delegation.AuthenticationTokenSecretManagerTest
+[ERROR] Tests run: 10, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 10.995 s <<< FAILURE! - in org.apache.accumulo.server.security.delegation.AuthenticationTokenSecretManagerTest
+[ERROR] org.apache.accumulo.server.security.delegation.AuthenticationTokenSecretManagerTest.testVerifyPassword  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.AssertionError: Different tokens for the same user shouldn't have the same password
+	at org.apache.accumulo.server.security.delegation.AuthenticationTokenSecretManagerTest.testVerifyPassword(AuthenticationTokenSecretManagerTest.java:208)
+
+[INFO] Running org.apache.accumulo.server.security.delegation.AuthenticationKeyTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.accumulo.server.security.delegation.AuthenticationKeyTest
+[INFO] Running org.apache.accumulo.server.security.delegation.AuthenticationTokenKeyManagerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.038 s - in org.apache.accumulo.server.security.delegation.AuthenticationTokenKeyManagerTest
+[INFO] Running org.apache.accumulo.server.security.delegation.ZooAuthenticationKeyWatcherTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in org.apache.accumulo.server.security.delegation.ZooAuthenticationKeyWatcherTest
+[INFO] Running org.apache.accumulo.server.security.delegation.ZooAuthenticationKeyDistributorTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.accumulo.server.security.delegation.ZooAuthenticationKeyDistributorTest
+[INFO] Running org.apache.accumulo.server.security.handler.ZKAuthenticatorTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.accumulo.server.security.handler.ZKAuthenticatorTest
+[INFO] Running org.apache.accumulo.server.tablets.LogicalTimeTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.apache.accumulo.server.tablets.LogicalTimeTest
+[INFO] Running org.apache.accumulo.server.tablets.MillisTimeTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.accumulo.server.tablets.MillisTimeTest
+[INFO] Running org.apache.accumulo.server.tablets.TabletTimeTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.accumulo.server.tablets.TabletTimeTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   AuthenticationTokenSecretManagerTest.testVerifyPassword:208 Different tokens for the same user shouldn't have the same password
+[INFO] 
+[ERROR] Tests run: 332, Failures: 1, Errors: 0, Skipped: 3
+[INFO] 
+[INFO] 
+[INFO] ------------------< org.apache.accumulo:accumulo-gc >-------------------
+[INFO] Building Apache Accumulo GC Server 2.0.1                          [4/11]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:parse-version (parse-project-version) @ accumulo-gc ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ accumulo-gc ---
+[INFO] 
+[INFO] --- mavanagaiata:0.9.4:commit (git-commit) @ accumulo-gc ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.13:check (check-licenses) @ accumulo-gc ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.10.0:sort (sort-pom) @ accumulo-gc ---
+[INFO] Sorting file /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/server/gc/pom.xml
+[INFO] Pom file is already sorted, exiting
+[INFO] 
+[INFO] --- formatter-maven-plugin:2.10.0:format (format-java-source) @ accumulo-gc ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 10
+[INFO] Successfully formatted:          0 file(s)
+[INFO] Fail to format:                  0 file(s)
+[INFO] Skipped:                         10 file(s)
+[INFO] Read only skipped:               0 file(s)
+[INFO] Approximate time taken:          0s
+[INFO] 
+[INFO] --- impsort-maven-plugin:1.2.0:sort (sort-imports) @ accumulo-gc ---
+[INFO]  Total Files Processed: 10 in 00:00.041
+[INFO]         Already Sorted: 10
+[INFO]         Needed Sorting:  0
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ accumulo-gc ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ accumulo-gc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/server/gc/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.10.0:verify (verify-sorted-pom) @ accumulo-gc ---
+[INFO] Verifying file /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/server/gc/pom.xml
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ accumulo-gc ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/server/gc/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ accumulo-gc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ accumulo-gc ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/server/gc/target/test-classes
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-java-signatures) @ accumulo-gc ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.8.0:modernizer (modernizer) @ accumulo-gc ---
+[INFO] 
+[INFO] --- warbucks-maven-plugin:1.1.2:check (check-junit-categories-on-its) @ accumulo-gc ---
+[INFO] Rule 0: Class Matches: 0
+[INFO] Rule 0: Class Failures: 0
+[INFO] Total class failures: 0
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ accumulo-gc ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.accumulo.gc.GarbageCollectWriteAheadLogsTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.384 s - in org.apache.accumulo.gc.GarbageCollectWriteAheadLogsTest
+[INFO] Running org.apache.accumulo.gc.GarbageCollectionTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in org.apache.accumulo.gc.GarbageCollectionTest
+[INFO] Running org.apache.accumulo.gc.SimpleGarbageCollectorOptsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.accumulo.gc.SimpleGarbageCollectorOptsTest
+[INFO] Running org.apache.accumulo.gc.SimpleGarbageCollectorTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.174 s - in org.apache.accumulo.gc.SimpleGarbageCollectorTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 31, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] ----------------< org.apache.accumulo:accumulo-master >-----------------
+[INFO] Building Apache Accumulo Master Server 2.0.1                      [5/11]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:parse-version (parse-project-version) @ accumulo-master ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ accumulo-master ---
+[INFO] 
+[INFO] --- mavanagaiata:0.9.4:commit (git-commit) @ accumulo-master ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.13:check (check-licenses) @ accumulo-master ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.10.0:sort (sort-pom) @ accumulo-master ---
+[INFO] Sorting file /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/server/master/pom.xml
+[INFO] Pom file is already sorted, exiting
+[INFO] 
+[INFO] --- formatter-maven-plugin:2.10.0:format (format-java-source) @ accumulo-master ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 103
+[INFO] Successfully formatted:          0 file(s)
+[INFO] Fail to format:                  0 file(s)
+[INFO] Skipped:                         103 file(s)
+[INFO] Read only skipped:               0 file(s)
+[INFO] Approximate time taken:          0s
+[INFO] 
+[INFO] --- impsort-maven-plugin:1.2.0:sort (sort-imports) @ accumulo-master ---
+[INFO]  Total Files Processed: 103 in 00:00.244
+[INFO]         Already Sorted: 103
+[INFO]         Needed Sorting:   0
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ accumulo-master ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ accumulo-master ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/server/master/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.10.0:verify (verify-sorted-pom) @ accumulo-master ---
+[INFO] Verifying file /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/server/master/pom.xml
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ accumulo-master ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 91 source files to /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/server/master/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ accumulo-master ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ accumulo-master ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 12 source files to /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/server/master/target/test-classes
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-java-signatures) @ accumulo-master ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.8.0:modernizer (modernizer) @ accumulo-master ---
+[INFO] 
+[INFO] --- warbucks-maven-plugin:1.1.2:check (check-junit-categories-on-its) @ accumulo-master ---
+[INFO] Rule 0: Class Matches: 0
+[INFO] Rule 0: Class Failures: 0
+[INFO] Total class failures: 0
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ accumulo-master ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.accumulo.master.DefaultMapTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 s - in org.apache.accumulo.master.DefaultMapTest
+[INFO] Running org.apache.accumulo.master.state.RootTabletStateStoreTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.135 s - in org.apache.accumulo.master.state.RootTabletStateStoreTest
+[INFO] Running org.apache.accumulo.master.tableOps.bulkVer2.PrepBulkImportTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.132 s - in org.apache.accumulo.master.tableOps.bulkVer2.PrepBulkImportTest
+[INFO] Running org.apache.accumulo.master.tableOps.ShutdownTServerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.128 s - in org.apache.accumulo.master.tableOps.ShutdownTServerTest
+[INFO] Running org.apache.accumulo.master.tableOps.tableImport.ImportTableTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in org.apache.accumulo.master.tableOps.tableImport.ImportTableTest
+[INFO] Running org.apache.accumulo.master.metrics.fate.FateMetricValuesTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.accumulo.master.metrics.fate.FateMetricValuesTest
+[INFO] Running org.apache.accumulo.master.metrics.ReplicationMetricsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 s - in org.apache.accumulo.master.metrics.ReplicationMetricsTest
+[INFO] Running org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest
+[INFO] Running org.apache.accumulo.master.replication.UnorderedWorkAssignerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 s - in org.apache.accumulo.master.replication.UnorderedWorkAssignerTest
+[INFO] Running org.apache.accumulo.master.replication.SequentialWorkAssignerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.accumulo.master.replication.SequentialWorkAssignerTest
+[INFO] Running org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.104 s - in org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest
+[INFO] Running org.apache.accumulo.master.replication.WorkMakerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.apache.accumulo.master.replication.WorkMakerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] ----------------< org.apache.accumulo:accumulo-tracer >-----------------
+[INFO] Building Apache Accumulo Tracer Server 2.0.1                      [6/11]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:parse-version (parse-project-version) @ accumulo-tracer ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ accumulo-tracer ---
+[INFO] 
+[INFO] --- mavanagaiata:0.9.4:commit (git-commit) @ accumulo-tracer ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.13:check (check-licenses) @ accumulo-tracer ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.10.0:sort (sort-pom) @ accumulo-tracer ---
+[INFO] Sorting file /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/server/tracer/pom.xml
+[INFO] Pom file is already sorted, exiting
+[INFO] 
+[INFO] --- formatter-maven-plugin:2.10.0:format (format-java-source) @ accumulo-tracer ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 12
+[INFO] Successfully formatted:          0 file(s)
+[INFO] Fail to format:                  0 file(s)
+[INFO] Skipped:                         12 file(s)
+[INFO] Read only skipped:               0 file(s)
+[INFO] Approximate time taken:          0s
+[INFO] 
+[INFO] --- impsort-maven-plugin:1.2.0:sort (sort-imports) @ accumulo-tracer ---
+[INFO]  Total Files Processed: 12 in 00:00.034
+[INFO]         Already Sorted: 12
+[INFO]         Needed Sorting:  0
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ accumulo-tracer ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ accumulo-tracer ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/server/tracer/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.10.0:verify (verify-sorted-pom) @ accumulo-tracer ---
+[INFO] Verifying file /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/server/tracer/pom.xml
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ accumulo-tracer ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 13 source files to /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/server/tracer/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ accumulo-tracer ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ accumulo-tracer ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/server/tracer/target/test-classes
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-java-signatures) @ accumulo-tracer ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.8.0:modernizer (modernizer) @ accumulo-tracer ---
+[INFO] 
+[INFO] --- warbucks-maven-plugin:1.1.2:check (check-junit-categories-on-its) @ accumulo-tracer ---
+[INFO] Rule 0: Class Matches: 0
+[INFO] Rule 0: Class Failures: 0
+[INFO] Total class failures: 0
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ accumulo-tracer ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.accumulo.tracer.TracerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.503 s - in org.apache.accumulo.tracer.TracerTest
+[INFO] Running org.apache.accumulo.tracer.ZooTraceClientTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.319 s - in org.apache.accumulo.tracer.ZooTraceClientTest
+[INFO] Running org.apache.accumulo.tracer.AsyncSpanReceiverTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.009 s - in org.apache.accumulo.tracer.AsyncSpanReceiverTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] ----------------< org.apache.accumulo:accumulo-monitor >----------------
+[INFO] Building Apache Accumulo Monitor Server 2.0.1                     [7/11]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:parse-version (parse-project-version) @ accumulo-monitor ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ accumulo-monitor ---
+[INFO] 
+[INFO] --- mavanagaiata:0.9.4:commit (git-commit) @ accumulo-monitor ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.13:check (check-licenses) @ accumulo-monitor ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.10.0:sort (sort-pom) @ accumulo-monitor ---
+[INFO] Sorting file /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/server/monitor/pom.xml
+[INFO] Pom file is already sorted, exiting
+[INFO] 
+[INFO] --- formatter-maven-plugin:2.10.0:format (format-java-source) @ accumulo-monitor ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 85
+[INFO] Successfully formatted:          0 file(s)
+[INFO] Fail to format:                  0 file(s)
+[INFO] Skipped:                         85 file(s)
+[INFO] Read only skipped:               0 file(s)
+[INFO] Approximate time taken:          0s
+[INFO] 
+[INFO] --- impsort-maven-plugin:1.2.0:sort (sort-imports) @ accumulo-monitor ---
+[INFO]  Total Files Processed: 85 in 00:00.129
+[INFO]         Already Sorted: 85
+[INFO]         Needed Sorting:  0
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ accumulo-monitor ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ accumulo-monitor ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 78 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.10.0:verify (verify-sorted-pom) @ accumulo-monitor ---
+[INFO] Verifying file /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/server/monitor/pom.xml
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ accumulo-monitor ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 79 source files to /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/server/monitor/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ accumulo-monitor ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ accumulo-monitor ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/server/monitor/target/test-classes
+[WARNING] /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/server/monitor/src/test/java/org/apache/accumulo/monitor/util/AccumuloMonitorAppenderTest.java:[53,57] none() in org.junit.rules.ExpectedException has been deprecated
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-java-signatures) @ accumulo-monitor ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.8.0:modernizer (modernizer) @ accumulo-monitor ---
+[INFO] 
+[INFO] --- warbucks-maven-plugin:1.1.2:check (check-junit-categories-on-its) @ accumulo-monitor ---
+[INFO] Rule 0: Class Matches: 1
+[INFO] Rule 0: Class Failures: 0
+[INFO] Total class failures: 0
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ accumulo-monitor ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.accumulo.monitor.ShowTraceLinkTypeTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 s - in org.apache.accumulo.monitor.ShowTraceLinkTypeTest
+[INFO] Running org.apache.accumulo.monitor.rest.tservers.TabletServerInformationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.184 s - in org.apache.accumulo.monitor.rest.tservers.TabletServerInformationTest
+[INFO] Running org.apache.accumulo.monitor.util.ParameterValidatorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.accumulo.monitor.util.ParameterValidatorTest
+[INFO] Running org.apache.accumulo.monitor.util.AccumuloMonitorAppenderTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.191 s - in org.apache.accumulo.monitor.util.AccumuloMonitorAppenderTest
+[INFO] Running org.apache.accumulo.monitor.ZooKeeperStatusTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.accumulo.monitor.ZooKeeperStatusTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] ---------< org.apache.accumulo:accumulo-iterator-test-harness >---------
+[INFO] Building Apache Accumulo Iterator Test Harness 2.0.1              [8/11]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:parse-version (parse-project-version) @ accumulo-iterator-test-harness ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ accumulo-iterator-test-harness ---
+[INFO] 
+[INFO] --- mavanagaiata:0.9.4:commit (git-commit) @ accumulo-iterator-test-harness ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.13:check (check-licenses) @ accumulo-iterator-test-harness ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.10.0:sort (sort-pom) @ accumulo-iterator-test-harness ---
+[INFO] Sorting file /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/iterator-test-harness/pom.xml
+[INFO] Pom file is already sorted, exiting
+[INFO] 
+[INFO] --- formatter-maven-plugin:2.10.0:format (format-java-source) @ accumulo-iterator-test-harness ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 18
+[INFO] Successfully formatted:          0 file(s)
+[INFO] Fail to format:                  0 file(s)
+[INFO] Skipped:                         18 file(s)
+[INFO] Read only skipped:               0 file(s)
+[INFO] Approximate time taken:          0s
+[INFO] 
+[INFO] --- impsort-maven-plugin:1.2.0:sort (sort-imports) @ accumulo-iterator-test-harness ---
+[INFO]  Total Files Processed: 18 in 00:00.027
+[INFO]         Already Sorted: 18
+[INFO]         Needed Sorting:  0
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ accumulo-iterator-test-harness ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ accumulo-iterator-test-harness ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/iterator-test-harness/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.10.0:verify (verify-sorted-pom) @ accumulo-iterator-test-harness ---
+[INFO] Verifying file /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/iterator-test-harness/pom.xml
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ accumulo-iterator-test-harness ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 17 source files to /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/iterator-test-harness/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ accumulo-iterator-test-harness ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ accumulo-iterator-test-harness ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/iterator-test-harness/target/test-classes
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-java-signatures) @ accumulo-iterator-test-harness ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.8.0:modernizer (modernizer) @ accumulo-iterator-test-harness ---
+[INFO] 
+[INFO] --- warbucks-maven-plugin:1.1.2:check (check-junit-categories-on-its) @ accumulo-iterator-test-harness ---
+[INFO] Rule 0: Class Matches: 0
+[INFO] Rule 0: Class Failures: 0
+[INFO] Total class failures: 0
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ accumulo-iterator-test-harness ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.accumulo.iteratortest.framework.JUnitFrameworkTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.12 s - in org.apache.accumulo.iteratortest.framework.JUnitFrameworkTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] -----------------< org.apache.accumulo:accumulo-test >------------------
+[INFO] Building Apache Accumulo Testing 2.0.1                            [9/11]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:parse-version (parse-project-version) @ accumulo-test ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ accumulo-test ---
+[INFO] 
+[INFO] --- mavanagaiata:0.9.4:commit (git-commit) @ accumulo-test ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.13:check (check-licenses) @ accumulo-test ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- exec-maven-plugin:1.5.0:exec (check-for-misplaced-ITs) @ accumulo-test ---
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.10.0:sort (sort-pom) @ accumulo-test ---
+[INFO] Sorting file /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/test/pom.xml
+[INFO] Pom file is already sorted, exiting
+[INFO] 
+[INFO] --- formatter-maven-plugin:2.10.0:format (format-java-source) @ accumulo-test ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 271
+[INFO] Successfully formatted:          0 file(s)
+[INFO] Fail to format:                  0 file(s)
+[INFO] Skipped:                         271 file(s)
+[INFO] Read only skipped:               0 file(s)
+[INFO] Approximate time taken:          1s
+[INFO] 
+[INFO] --- impsort-maven-plugin:1.2.0:sort (sort-imports) @ accumulo-test ---
+[INFO]  Total Files Processed: 271 in 00:01.129
+[INFO]         Already Sorted: 271
+[INFO]         Needed Sorting:   0
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ accumulo-test ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ accumulo-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.10.0:verify (verify-sorted-pom) @ accumulo-test ---
+[INFO] Verifying file /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/test/pom.xml
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ accumulo-test ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 260 source files to /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/test/target/classes
+[WARNING] /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/test/src/main/java/org/apache/accumulo/test/rpc/ThriftBehaviorIT.java:[48,57] none() in org.junit.rules.ExpectedException has been deprecated
+[WARNING] /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/test/src/main/java/org/apache/accumulo/test/VolumeChooserFailureIT.java:[50,54] none() in org.junit.rules.ExpectedException has been deprecated
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ accumulo-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ accumulo-test ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 12 source files to /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/test/target/test-classes
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-java-signatures) @ accumulo-test ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.8.0:modernizer (modernizer) @ accumulo-test ---
+[INFO] 
+[INFO] --- warbucks-maven-plugin:1.1.2:check (check-junit-categories-on-its) @ accumulo-test ---
+[INFO] Rule 0: Class Matches: 206
+[INFO] Rule 0: Class Failures: 0
+[INFO] Total class failures: 0
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ accumulo-test ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.accumulo.test.fate.zookeeper.ZooLockTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.113 s - in org.apache.accumulo.test.fate.zookeeper.ZooLockTest
+[INFO] Running org.apache.accumulo.test.performance.scan.CollectTabletStatsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.apache.accumulo.test.performance.scan.CollectTabletStatsTest
+[INFO] Running org.apache.accumulo.test.iterator.WholeRowIteratorTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.293 s - in org.apache.accumulo.test.iterator.WholeRowIteratorTest
+[INFO] Running org.apache.accumulo.test.iterator.SummingCombinerTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.151 s - in org.apache.accumulo.test.iterator.SummingCombinerTest
+[INFO] Running org.apache.accumulo.test.iterator.CfCqSliceFilterTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.131 s - in org.apache.accumulo.test.iterator.CfCqSliceFilterTest
+[INFO] Running org.apache.accumulo.test.iterator.AgeOffFilterTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.099 s - in org.apache.accumulo.test.iterator.AgeOffFilterTest
+[INFO] Running org.apache.accumulo.test.iterator.RegExTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.208 s - in org.apache.accumulo.test.iterator.RegExTest
+[INFO] Running org.apache.accumulo.test.constraints.NumericValueConstraintTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.accumulo.test.constraints.NumericValueConstraintTest
+[INFO] Running org.apache.accumulo.test.constraints.AlphaNumKeyConstraintTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.accumulo.test.constraints.AlphaNumKeyConstraintTest
+[INFO] Running org.apache.accumulo.test.util.CertUtilsTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.117 s - in org.apache.accumulo.test.util.CertUtilsTest
+[INFO] Running org.apache.accumulo.test.security.KerberosTokenEmbeddedKDCTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.333 s - in org.apache.accumulo.test.security.KerberosTokenEmbeddedKDCTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 49, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] -----------< org.apache.accumulo:accumulo-hadoop-mapreduce >------------
+[INFO] Building Apache Accumulo Hadoop MapReduce 2.0.1                  [10/11]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:parse-version (parse-project-version) @ accumulo-hadoop-mapreduce ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ accumulo-hadoop-mapreduce ---
+[INFO] 
+[INFO] --- mavanagaiata:0.9.4:commit (git-commit) @ accumulo-hadoop-mapreduce ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.13:check (check-licenses) @ accumulo-hadoop-mapreduce ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.10.0:sort (sort-pom) @ accumulo-hadoop-mapreduce ---
+[INFO] Sorting file /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/hadoop-mapreduce/pom.xml
+[INFO] Pom file is already sorted, exiting
+[INFO] 
+[INFO] --- formatter-maven-plugin:2.10.0:format (format-java-source) @ accumulo-hadoop-mapreduce ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 59
+[INFO] Successfully formatted:          0 file(s)
+[INFO] Fail to format:                  0 file(s)
+[INFO] Skipped:                         59 file(s)
+[INFO] Read only skipped:               0 file(s)
+[INFO] Approximate time taken:          0s
+[INFO] 
+[INFO] --- impsort-maven-plugin:1.2.0:sort (sort-imports) @ accumulo-hadoop-mapreduce ---
+[INFO]  Total Files Processed: 59 in 00:00.118
+[INFO]         Already Sorted: 59
+[INFO]         Needed Sorting:  0
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ accumulo-hadoop-mapreduce ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ accumulo-hadoop-mapreduce ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/hadoop-mapreduce/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.10.0:verify (verify-sorted-pom) @ accumulo-hadoop-mapreduce ---
+[INFO] Verifying file /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/hadoop-mapreduce/pom.xml
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ accumulo-hadoop-mapreduce ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 31 source files to /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/hadoop-mapreduce/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ accumulo-hadoop-mapreduce ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ accumulo-hadoop-mapreduce ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 28 source files to /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/hadoop-mapreduce/target/test-classes
+[WARNING] /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/hadoop-mapreduce/src/test/java/org/apache/accumulo/hadoop/mapreduce/AccumuloInputFormatTest.java:[49,57] none() in org.junit.rules.ExpectedException has been deprecated
+[WARNING] /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/hadoop-mapreduce/src/test/java/org/apache/accumulo/hadoop/mapred/AccumuloInputFormatTest.java:[55,57] none() in org.junit.rules.ExpectedException has been deprecated
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-java-signatures) @ accumulo-hadoop-mapreduce ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.8.0:modernizer (modernizer) @ accumulo-hadoop-mapreduce ---
+[INFO] 
+[INFO] --- warbucks-maven-plugin:1.1.2:check (check-junit-categories-on-its) @ accumulo-hadoop-mapreduce ---
+[INFO] Rule 0: Class Matches: 13
+[INFO] Rule 0: Class Failures: 0
+[INFO] Total class failures: 0
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ accumulo-hadoop-mapreduce ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.accumulo.hadoop.mapred.MultiTableInputFormatTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.607 s - in org.apache.accumulo.hadoop.mapred.MultiTableInputFormatTest
+[INFO] Running org.apache.accumulo.hadoop.mapred.AccumuloFileOutputFormatTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.273 s - in org.apache.accumulo.hadoop.mapred.AccumuloFileOutputFormatTest
+[INFO] Running org.apache.accumulo.hadoop.mapred.AccumuloInputFormatTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 s - in org.apache.accumulo.hadoop.mapred.AccumuloInputFormatTest
+[INFO] Running org.apache.accumulo.hadoop.mapred.AccumuloOutputFormatTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 s - in org.apache.accumulo.hadoop.mapred.AccumuloOutputFormatTest
+[INFO] Running org.apache.accumulo.hadoop.mapreduce.MultiTableInputFormatTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.184 s - in org.apache.accumulo.hadoop.mapreduce.MultiTableInputFormatTest
+[INFO] Running org.apache.accumulo.hadoop.mapreduce.AccumuloFileOutputFormatTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.accumulo.hadoop.mapreduce.AccumuloFileOutputFormatTest
+[INFO] Running org.apache.accumulo.hadoop.mapreduce.partition.RangePartitionerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.454 s - in org.apache.accumulo.hadoop.mapreduce.partition.RangePartitionerTest
+[INFO] Running org.apache.accumulo.hadoop.mapreduce.AccumuloInputFormatTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 s - in org.apache.accumulo.hadoop.mapreduce.AccumuloInputFormatTest
+[INFO] Running org.apache.accumulo.hadoop.mapreduce.AccumuloOutputFormatTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s - in org.apache.accumulo.hadoop.mapreduce.AccumuloOutputFormatTest
+[INFO] Running org.apache.accumulo.hadoopImpl.mapred.RangeInputSplitTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.accumulo.hadoopImpl.mapred.RangeInputSplitTest
+[INFO] Running org.apache.accumulo.hadoopImpl.mapreduce.BatchInputSplitTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.accumulo.hadoopImpl.mapreduce.BatchInputSplitTest
+[INFO] Running org.apache.accumulo.hadoopImpl.mapreduce.RangeInputSplitTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.accumulo.hadoopImpl.mapreduce.RangeInputSplitTest
+[INFO] Running org.apache.accumulo.hadoopImpl.mapreduce.InputTableConfigTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.accumulo.hadoopImpl.mapreduce.InputTableConfigTest
+[INFO] Running org.apache.accumulo.hadoopImpl.mapreduce.InputFormatBuilderTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.accumulo.hadoopImpl.mapreduce.InputFormatBuilderTest
+[INFO] Running org.apache.accumulo.hadoopImpl.mapreduce.lib.ConfiguratorBaseTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.apache.accumulo.hadoopImpl.mapreduce.lib.ConfiguratorBaseTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 51, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --------------------< org.apache.accumulo:accumulo >--------------------
+[INFO] Building Apache Accumulo 2.0.1                                   [11/11]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:parse-version (parse-project-version) @ accumulo ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ accumulo ---
+[INFO] 
+[INFO] --- mavanagaiata:0.9.4:commit (git-commit) @ accumulo ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.13:check (check-licenses) @ accumulo ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.10.0:sort (sort-pom) @ accumulo ---
+[INFO] Sorting file /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/assemble/pom.xml
+[INFO] Pom file is already sorted, exiting
+[INFO] 
+[INFO] --- formatter-maven-plugin:2.10.0:format (format-java-source) @ accumulo ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 0
+[INFO] 
+[INFO] --- impsort-maven-plugin:1.2.0:sort (sort-imports) @ accumulo ---
+[INFO]  Total Files Processed: 0 in 00:00.000
+[INFO]         Already Sorted: 0
+[INFO]         Needed Sorting: 0
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ accumulo ---
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.10.0:verify (verify-sorted-pom) @ accumulo ---
+[INFO] Verifying file /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/assemble/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-java-signatures) @ accumulo ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.8.0:modernizer (modernizer) @ accumulo ---
+[INFO] 
+[INFO] --- warbucks-maven-plugin:1.1.2:check (check-junit-categories-on-its) @ accumulo ---
+[INFO] Rule 0: Class Matches: 0
+[INFO] Rule 0: Class Failures: 0
+[INFO] Total class failures: 0
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Apache Accumulo Project 2.0.1:
+[INFO] 
+[INFO] Apache Accumulo Project ............................ SUCCESS [  3.389 s]
+[INFO] Apache Accumulo Start .............................. SUCCESS [01:03 min]
+[INFO] Apache Accumulo Server Base ........................ FAILURE [ 57.650 s]
+[INFO] Apache Accumulo GC Server .......................... SUCCESS [  3.487 s]
+[INFO] Apache Accumulo Master Server ...................... SUCCESS [  4.449 s]
+[INFO] Apache Accumulo Tracer Server ...................... SUCCESS [  9.773 s]
+[INFO] Apache Accumulo Monitor Server ..................... SUCCESS [  4.492 s]
+[INFO] Apache Accumulo Iterator Test Harness .............. SUCCESS [  2.553 s]
+[INFO] Apache Accumulo Testing ............................ SUCCESS [ 26.457 s]
+[INFO] Apache Accumulo Hadoop MapReduce ................... SUCCESS [  5.315 s]
+[INFO] Apache Accumulo .................................... SUCCESS [  4.102 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  03:05 min
+[INFO] Finished at: 2023-11-13T17:34:00Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.0.0-M5:test (default-test) on project accumulo-server-base: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/runner/work/paste_project/paste_project/projects/accumulo-76247b1739dd3042cb2d959a7a99f0cf1bcb1324/server/base/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :accumulo-server-base
+[INFO] Build failures were ignored.
+
+#Tests run (RetestAll seq.): 514
+

@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.dubbo.remoting.p2p.support.MulticastNetworkerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.274 s <<< FAILURE! - in org.apache.dubbo.remoting.p2p.support.MulticastNetworkerTest
+testJoin  Time elapsed: 1.262 s  <<< ERROR!
+org.apache.dubbo.remoting.RemotingException: message can not send, because channel is closed . url:exchange://0.0.0.0:36447?exchanger=header
+	at org.apache.dubbo.remoting.p2p.support.MulticastNetworkerTest.testJoin(MulticastNetworkerTest.java:60)
+
+
+#Tests run (stage 1 in 630 secs.): 3519
+#Failed tests (stage 1): 2
+#Tests run (stage 2 in 125 secs.): 2
+#Failed tests (stage 2): 0
+End-to-end time: 755 secs.
+

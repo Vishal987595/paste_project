@@ -1,0 +1,95 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.datasketches.theta.ConcurrentDirectQuickSelectSketchTest
+-------------------------------------------------------------------------------
+Tests run: 30, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.639 s <<< FAILURE! - in org.apache.datasketches.theta.ConcurrentDirectQuickSelectSketchTest
+org.apache.datasketches.theta.ConcurrentDirectQuickSelectSketchTest.checkConstructReconstructFromMemory  Time elapsed: 0.009 s  <<< FAILURE!
+java.util.concurrent.RejectedExecutionException: Task org.apache.datasketches.theta.ConcurrentBackgroundThetaPropagation@56da315 rejected from java.util.concurrent.ThreadPoolExecutor@1522760[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2063)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
+	at java.util.concurrent.Executors$DelegatedExecutorService.execute(Executors.java:668)
+	at org.apache.datasketches.theta.ConcurrentDirectQuickSelectSketch.propagate(ConcurrentDirectQuickSelectSketch.java:225)
+	at org.apache.datasketches.theta.ConcurrentHeapThetaBuffer.propagateToSharedSketch(ConcurrentHeapThetaBuffer.java:117)
+	at org.apache.datasketches.theta.ConcurrentHeapThetaBuffer.hashUpdate(ConcurrentHeapThetaBuffer.java:214)
+	at org.apache.datasketches.theta.UpdateSketch.update(UpdateSketch.java:212)
+	at org.apache.datasketches.theta.ConcurrentDirectQuickSelectSketchTest.checkConstructReconstructFromMemory(ConcurrentDirectQuickSelectSketchTest.java:491)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+org.apache.datasketches.theta.ConcurrentDirectQuickSelectSketchTest.checkRebuild  Time elapsed: 0.004 s  <<< FAILURE!
+java.util.concurrent.RejectedExecutionException: Task org.apache.datasketches.theta.ConcurrentBackgroundThetaPropagation@79dfd9f7 rejected from java.util.concurrent.ThreadPoolExecutor@43cb2146[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 1]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2063)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
+	at java.util.concurrent.Executors$DelegatedExecutorService.execute(Executors.java:668)
+	at org.apache.datasketches.theta.ConcurrentDirectQuickSelectSketch.propagate(ConcurrentDirectQuickSelectSketch.java:225)
+	at org.apache.datasketches.theta.ConcurrentHeapThetaBuffer.propagateToSharedSketch(ConcurrentHeapThetaBuffer.java:117)
+	at org.apache.datasketches.theta.ConcurrentHeapThetaBuffer.hashUpdate(ConcurrentHeapThetaBuffer.java:214)
+	at org.apache.datasketches.theta.UpdateSketch.update(UpdateSketch.java:212)
+	at org.apache.datasketches.theta.ConcurrentDirectQuickSelectSketchTest.checkRebuild(ConcurrentDirectQuickSelectSketchTest.java:382)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+-------------------------------------------------------------------------------
+Test set: org.apache.datasketches.tuple.adouble.AdoubleAnotBTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.235 s <<< FAILURE! - in org.apache.datasketches.tuple.adouble.AdoubleAnotBTest
+org.apache.datasketches.tuple.adouble.AdoubleAnotBTest.aNotBEstimationOverlap  Time elapsed: 0.038 s  <<< FAILURE!
+java.lang.AssertionError: expected [0] but found [2123]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:839)
+	at org.testng.Assert.assertEquals(Assert.java:849)
+	at org.apache.datasketches.tuple.adouble.AdoubleAnotBTest$Results.check(AdoubleAnotBTest.java:129)
+	at org.apache.datasketches.tuple.adouble.AdoubleAnotBTest.threeMethodsWithTheta(AdoubleAnotBTest.java:61)
+	at org.apache.datasketches.tuple.adouble.AdoubleAnotBTest.aNotBEstimationOverlap(AdoubleAnotBTest.java:265)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+
+#Tests run (stage 1 in 22.794 secs.): 1490
+#Failed tests (stage 1): 3
+#Tests run (stage 2 in 6.478 secs.): 3
+#Failed tests (stage 2): 0
+End-to-end time: 29.272 secs.
+

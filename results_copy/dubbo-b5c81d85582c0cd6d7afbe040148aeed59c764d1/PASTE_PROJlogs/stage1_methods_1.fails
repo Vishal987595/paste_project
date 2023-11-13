@@ -1,0 +1,2 @@
+testJoin
+org.apache.dubbo.remoting.p2p.support.MulticastNetworkerTest#testJoin

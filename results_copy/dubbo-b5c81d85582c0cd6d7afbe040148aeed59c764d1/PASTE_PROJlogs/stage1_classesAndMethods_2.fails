@@ -1,0 +1,2 @@
+testCompile
+org.apache.dubbo.metadata.tools.CompilerTest#testCompile

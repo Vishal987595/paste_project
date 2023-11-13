@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.dubbo.metadata.tools.CompilerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.787 s <<< FAILURE! - in org.apache.dubbo.metadata.tools.CompilerTest
+testCompile  Time elapsed: 1.754 s  <<< ERROR!
+java.lang.RuntimeException: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Unterminated string at line 1 column 8193 path $[2].meta[0].method.
+	at org.apache.dubbo.metadata.tools.CompilerTest.testCompile(CompilerTest.java:31)
+Caused by: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Unterminated string at line 1 column 8193 path $[2].meta[0].method.
+	at org.apache.dubbo.metadata.tools.CompilerTest.testCompile(CompilerTest.java:31)
+Caused by: com.google.gson.stream.MalformedJsonException: Unterminated string at line 1 column 8193 path $[2].meta[0].method.
+	at org.apache.dubbo.metadata.tools.CompilerTest.testCompile(CompilerTest.java:31)
+
+
+#Tests run (stage 1 in 640 secs.): 3519
+#Failed tests (stage 1): 2
+#Tests run (stage 2 in 126 secs.): 2
+#Failed tests (stage 2): 0
+End-to-end time: 766 secs.
+

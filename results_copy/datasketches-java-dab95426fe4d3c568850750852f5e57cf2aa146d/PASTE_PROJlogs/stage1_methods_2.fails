@@ -1,0 +1,3 @@
+org.apache.datasketches.theta.ConcurrentDirectQuickSelectSketchTest#checkConstructReconstructFromMemory
+org.apache.datasketches.theta.ConcurrentDirectQuickSelectSketchTest#checkRebuild
+org.apache.datasketches.tuple.adouble.AdoubleAnotBTest#aNotBEstimationOverlap

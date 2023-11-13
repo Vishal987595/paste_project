@@ -1,0 +1,5 @@
+org.apache.datasketches.theta.ConcurrentDirectQuickSelectSketchTest#checkConstructReconstructFromMemory
+org.apache.datasketches.theta.ConcurrentDirectQuickSelectSketchTest#checkHeapifyByteArrayEstimating
+org.apache.datasketches.theta.ConcurrentDirectQuickSelectSketchTest#checkResizeInBigMem
+org.apache.datasketches.theta.ConcurrentHeapQuickSelectSketchTest#checkHQStoCompactForms
+org.apache.datasketches.tuple.adouble.AdoubleAnotBTest#aNotBExactOverlap

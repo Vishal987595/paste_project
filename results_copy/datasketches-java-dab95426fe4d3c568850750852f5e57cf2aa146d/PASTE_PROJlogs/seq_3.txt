@@ -1,0 +1,56 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------< org.apache.datasketches:datasketches-java >--------------
+[INFO] Building datasketches-java 2.1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-banned-dependencies) @ datasketches-java ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ datasketches-java ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.6:prepare-agent (default-prepare-agent) @ datasketches-java ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.7.0:process (process-resource-bundles) @ datasketches-java ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ datasketches-java ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/runner/work/paste_project/paste_project/projects/datasketches-java-dab95426fe4d3c568850750852f5e57cf2aa146d/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ datasketches-java ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 282 source files to /home/runner/work/paste_project/paste_project/projects/datasketches-java-dab95426fe4d3c568850750852f5e57cf2aa146d/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ datasketches-java ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 17 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ datasketches-java ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 154 source files to /home/runner/work/paste_project/paste_project/projects/datasketches-java-dab95426fe4d3c568850750852f5e57cf2aa146d/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ datasketches-java ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+[INFO] Tests run: 1490, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.71 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1490, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  22.358 s
+[INFO] Finished at: 2023-11-13T17:46:49Z
+[INFO] ------------------------------------------------------------------------
+
+#Tests run (RetestAll seq.): 1490
+

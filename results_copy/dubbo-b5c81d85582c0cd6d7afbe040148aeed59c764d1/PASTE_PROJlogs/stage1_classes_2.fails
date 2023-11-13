@@ -1,0 +1,8 @@
+testMethodAnnotation
+testProvider
+testConsumer
+testBeanDefinitionParser
+org.apache.dubbo.config.spring.beans.factory.annotation.ServiceAnnotationBeanPostProcessorTest#testMethodAnnotation
+org.apache.dubbo.config.spring.context.annotation.EnableDubboTest#testProvider
+org.apache.dubbo.config.spring.context.annotation.EnableDubboTest#testConsumer
+org.apache.dubbo.config.spring.schema.GenericServiceTest#testBeanDefinitionParser
